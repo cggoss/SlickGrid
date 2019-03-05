@@ -1216,9 +1216,9 @@ if (typeof Slick === "undefined") {
 
         if (m.sortable) {
           header.addClass("slick-header-sortable");
-          header.append("<span class='slick-sort-indicator"
+          header.prepend("<span class='slick-sort-indicator"
             + (options.numberedMultiColumnSort && !options.sortColNumberInSeparateSpan ? " slick-sort-indicator-numbered" : "" ) + "' />");
-          if (options.numberedMultiColumnSort && options.sortColNumberInSeparateSpan) { header.append("<span class='slick-sort-indicator-numbered' />"); }
+          if (options.numberedMultiColumnSort && options.sortColNumberInSeparateSpan) { header.prepend("<span class='slick-sort-indicator-numbered' />"); }
         }
 
         trigger(self.onHeaderCellRendered, {
